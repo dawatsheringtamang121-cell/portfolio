@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dawa Tshering Tamang | Computer Systems and Network Portfolio</title>
+<meta name="description" content="Portfolio of Dawa Tshering Tamang, a final-year Diploma in Computer System and Network student at Jigme Namgyel Engineering College, Bhutan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="flags" aria-hidden="true"></div>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home">Dawa T. Tamang</a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch to dark theme" title="Toggle theme">&#9790;</button>
+      <button class="icon-btn" id="bgBtn" aria-pressed="true" aria-label="Turn background animation off" title="Background animation">&#10022;</button>
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+    </div>
+  </div>
+  <div id="prog"></div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Hi, I'm Dawa Tshering Tamang.</h1>
+      <div class="role" aria-live="polite"><span id="role">Computer systems and network student</span></div>
+      <p>I'm a final-year Diploma in Computer System and Network student at Jigme Namgyel Engineering College. I like building reliable networks, setting up servers, and creating simple websites that explain what I make.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="photo"><img src="images/me.jpg" alt="Dawa Tshering Tamang in a traditional gho, standing in front of a Bhutanese tower" width="900" height="1100" fetchpriority="high"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="two">
+      <div>
+        <p>I am a final-year student at Jigme Namgyel Engineering College, studying computer systems and networking. My course has given me hands-on practice with network design, server setup, and troubleshooting in the lab.</p>
+        <p>I enjoy understanding how data moves from one device to another, from IP addressing and routing to securing a Wi-Fi network. I also learn web development so I can present my work online.</p>
+        <p>After graduation I want to work as a network and system administrator and software developer. I plan to keep learning toward industry certifications and build tools that help Bhutan's offices, schools, and businesses run smoothly.</p>
+      </div>
+      <ul class="facts">
+        <li><b>Currently</b>Diploma in Computer System and Network, final year</li>
+        <li><b>College</b>Jigme Namgyel Engineering College</li>
+        <li><b>Interests</b>Networking, Linux, network security, software development</li>
+        <li><b>Career goal</b>Network and system administrator, and software developer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="panel">
+        <h3>Technical</h3>
+        <div class="skill"><span>Networking (TCP/IP, routing, switching) <em>85%</em></span><div class="meter"><i data-w="85"></i></div></div>
+        <div class="skill"><span>Linux administration <em>75%</em></span><div class="meter"><i data-w="75"></i></div></div>
+        <div class="skill"><span>Windows Server <em>70%</em></span><div class="meter"><i data-w="70"></i></div></div>
+        <div class="skill"><span>HTML &amp; CSS <em>70%</em></span><div class="meter"><i data-w="70"></i></div></div>
+        <div class="skill"><span>Python and Bash scripting <em>55%</em></span><div class="meter"><i data-w="55"></i></div></div>
+      </div>
+      <div class="panel">
+        <h3>Tools</h3>
+        <div class="tags"><span class="tag">Cisco Packet Tracer</span><span class="tag">Wireshark</span><span class="tag">VirtualBox</span><span class="tag">Ubuntu Server</span><span class="tag">Git &amp; GitHub</span><span class="tag">VS Code</span><span class="tag">PuTTY</span></div>
+      </div>
+      <div class="panel">
+        <h3>Other skills</h3>
+        <div class="tags"><span class="tag">Troubleshooting</span><span class="tag">Teamwork</span><span class="tag">Technical documentation</span><span class="tag">Time management</span><span class="tag">Communication</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button aria-pressed="true" data-f="all">All</button>
+      <button aria-pressed="false" data-f="net">Networking</button>
+      <button aria-pressed="false" data-f="sys">Systems</button>
+      <button aria-pressed="false" data-f="dev">Software</button>
+    </div>
+    <div class="proj-grid">
+      <article class="panel proj" data-c="dev">
+        <h3>Event Hub</h3>
+        <p>An event management system where organisers can create events and visitors can browse them and register to attend. It keeps event details and registrations in one place.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Database</span></div>
+        <div class="links"><a href="https://github.com/dawatsheringtamang121-cell/event-hub" target="_blank" rel="noopener">Code</a></div>
+      </article>
+      <article class="panel proj" data-c="dev">
+        <h3>Car Rental Service</h3>
+        <p>A car rental system where customers can view available cars, choose rental dates, and book a vehicle, while the owner manages cars and bookings.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Database</span></div>
+        <div class="links"><a href="https://github.com/dawatsheringtamang121-cell/car-rental-service" target="_blank" rel="noopener">Code</a></div>
+      </article>
+      <article class="panel proj" data-c="net">
+        <h3>Campus LAN Design</h3>
+        <p>A simulated campus network with separate VLANs for students, staff, and labs. It uses inter-VLAN routing, DHCP, and access control lists.</p>
+        <div class="tags"><span class="tag">Cisco Packet Tracer</span><span class="tag">VLAN</span><span class="tag">DHCP</span><span class="tag">ACL</span></div>
+        <div class="links"><a href="https://github.com/dawatsheringtamang121-cell/campus-lan-design" target="_blank" rel="noopener">Code and files</a></div>
+      </article>
+      <article class="panel proj" data-c="sys">
+        <h3>Linux Web and DNS Server</h3>
+        <p>Set up an Ubuntu Server in a virtual machine running Apache, a local DNS service, and SSH access with key-based login and a basic firewall.</p>
+        <div class="tags"><span class="tag">Ubuntu Server</span><span class="tag">Apache</span><span class="tag">DNS</span><span class="tag">UFW</span></div>
+        <div class="links"><a href="https://github.com/dawatsheringtamang121-cell/linux-server-setup" target="_blank" rel="noopener">Code and notes</a></div>
+      </article>
+      <article class="panel proj" data-c="dev">
+        <h3>This Portfolio Website</h3>
+        <p>A responsive personal site with a dark mode, project filter, and contact form validation, deployed on GitHub Pages.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="links"><a href="https://github.com/dawatsheringtamang121-cell/portfolio" target="_blank" rel="noopener">Code</a><a href="https://dawatsheringtamang121-cell.github.io/portfolio/" target="_blank" rel="noopener">Live site</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div>
+      <div class="timeline">
+        <div><h3>Diploma in Computer System and Network</h3><p>Jigme Namgyel Engineering College, Royal University of Bhutan</p><p class="when">Final year</p></div>
+        <div><h3>Certifications</h3>
+          <p><b>Becoming a Linux Server Admin</b><br>Packt, via Coursera<br><span class="when">Sep 21, 2026 &middot; <a href="https://coursera.org/verify/FG61SIR0ANXK" target="_blank" rel="noopener">Verify certificate</a></span></p>
+          <p><b>Python Tkinter: Design, Build &amp; Integrate GUIs</b><br>EDUCBA, via Coursera<br><span class="when">Sep 21, 2026 &middot; <a href="https://coursera.org/verify/V87WNLCFYHH9" target="_blank" rel="noopener">Verify certificate</a></span></p>
+          <p><b>Master Full-Stack Web Development with Laravel &amp; PHP</b><br>Board Infinity, via Coursera<br><span class="when">Sep 17, 2026 &middot; <a href="https://coursera.org/verify/T7JPV517OTBX" target="_blank" rel="noopener">Verify certificate</a></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap two">
+    <div>
+      <h2>Contact</h2>
+      <p>Looking for an internship or a first job in networking, system administration, or software development? Send me a message and I'll reply within two days.</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:dawatsheringtamang121@gmail.com">dawatsheringtamang121@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/dawatsheringtamang121-cell" target="_blank" rel="noopener">github.com/dawatsheringtamang121-cell</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">linkedin.com/feed</a></li>
+        <li>Location: Bhutan</li>
+      </ul>
+    </div>
+    <form id="form" novalidate>
+      <label>Name<input id="name" autocomplete="name"><span class="err" data-for="name"></span></label>
+      <label>Email<input id="email" type="email" autocomplete="email"><span class="err" data-for="email"></span></label>
+      <label>Message<textarea id="msg"></textarea><span class="err" data-for="msg"></span></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <div id="status" role="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="yr"></span> Dawa Tshering Tamang. Built with HTML, CSS and JavaScript.</div></footer>
+<button class="icon-btn" id="top" aria-label="Back to top">&uarr;</button>
+
+<script>
+(function(){
+  var root=document.documentElement, $=function(s){return document.querySelector(s)}, $$=function(s){return document.querySelectorAll(s)};
+
+  // Theme toggle (remembers choice)
+  var saved=null; try{saved=localStorage.getItem('theme')}catch(e){}
+  function setTheme(t){
+    root.setAttribute('data-theme',t);
+    var b=$('#themeBtn'); b.innerHTML=t==='dark'?'&#9728;':'&#9790;';
+    b.setAttribute('aria-label',t==='dark'?'Switch to light theme':'Switch to dark theme');
+    try{localStorage.setItem('theme',t)}catch(e){}
+  }
+  setTheme(saved||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  $('#themeBtn').onclick=function(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')};
+
+  // Mobile menu
+  var nav=$('#nav'), mb=$('#menuBtn');
+  mb.onclick=function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)};
+  $$('#nav a').forEach(function(a){a.onclick=function(){nav.classList.remove('open');mb.setAttribute('aria-expanded',false)}});
+
+  // Rotating role text
+  var roles=['Computer systems and network student','Future network and system administrator','Software developer in training','Problem solver'], i=0;
+  setInterval(function(){i=(i+1)%roles.length;$('#role').textContent=roles[i]},2600);
+
+  // Active nav link + skill bars + back to top
+  var links={}; $$('#nav a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){for(var k in links)links[k].classList.remove('on');links[e.target.id].classList.add('on')}
+  })},{rootMargin:'-45% 0px -50% 0px'});
+  $$('main section').forEach(function(s){io.observe(s)});
+  var sk=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){$$('.meter i').forEach(function(m){m.style.width=m.dataset.w+'%'});sk.disconnect()}
+  })},{threshold:.3});
+  sk.observe($('#skills'));
+  addEventListener('scroll',function(){$('#top').style.display=scrollY>600?'block':'none'});
+  $('#top').onclick=function(){scrollTo({top:0,behavior:'smooth'})};
+
+  // Project filter
+  $$('.filters button').forEach(function(b){b.onclick=function(){
+    $$('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    $$('.proj').forEach(function(p){p.classList.toggle('hide',b.dataset.f!=='all'&&p.dataset.c!==b.dataset.f)});
+  }});
+
+  // Contact form validation (opens the visitor's email app with the message filled in)
+  $('#form').onsubmit=function(e){
+    e.preventDefault();
+    var n=$('#name').value.trim(), m=$('#email').value.trim(), t=$('#msg').value.trim(), ok=true;
+    function err(k,txt){document.querySelector('[data-for='+k+']').textContent=txt;if(txt)ok=false}
+    err('name',n?'':'Enter your name.');
+    err('email',/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)?'':'Enter a valid email address, like name@example.com.');
+    err('msg',t.length>=10?'':'Write at least 10 characters.');
+    if(!ok){$('#status').textContent='';return}
+    $('#status').textContent='Opening your email app to send the message...';
+    location.href='mailto:dawatsheringtamang121@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n)+'&body='+encodeURIComponent(t+'\n\nFrom: '+n+' ('+m+')');
+    $('#form').reset();
+  };
+
+  // Animated network background: drifting nodes linked by lines, reacting to the cursor
+  (function(){
+    var cv=$('#bg'), cx=cv.getContext('2d'), W,H,dpr,nodes=[],mouse={x:-999,y:-999},on=true,raf=0,col={};
+    var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function colors(){var c=getComputedStyle(root);col.a=c.getPropertyValue('--accent').trim();col.f=c.getPropertyValue('--flag').trim()}
+    function hex(h,a){var n=parseInt(h.slice(1),16);return 'rgba('+(n>>16)+','+((n>>8)&255)+','+(n&255)+','+a+')'}
+    function size(){
+      dpr=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;
+      cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+      var n=Math.min(85,Math.round(W*H/17000));nodes=[];
+      for(var i=0;i<n;i++)nodes.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:1.4+Math.random()*1.6});
+    }
+    function draw(){
+      cx.clearRect(0,0,W,H);var L=135,i,j,p,q,d;
+      for(i=0;i<nodes.length;i++){
+        p=nodes[i];
+        if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+        for(j=i+1;j<nodes.length;j++){
+          q=nodes[j];d=Math.hypot(p.x-q.x,p.y-q.y);
+          if(d<L){cx.strokeStyle=hex(col.a,(1-d/L)*.28);cx.lineWidth=1;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}
+        }
+        d=Math.hypot(p.x-mouse.x,p.y-mouse.y);
+        if(d<170){cx.strokeStyle=hex(col.f,(1-d/170)*.7);cx.lineWidth=1.2;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(mouse.x,mouse.y);cx.stroke()}
+        cx.fillStyle=hex(col.a,.5);cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fill();
+      }
+      if(on&&!still)raf=requestAnimationFrame(draw);
+    }
+    function start(){cancelAnimationFrame(raf);on=true;document.body.classList.remove('bg-off');draw()}
+    function stop(){on=false;cancelAnimationFrame(raf);document.body.classList.add('bg-off')}
+    colors();size();
+    new MutationObserver(function(){colors();if(!on||still)draw()}).observe(root,{attributes:true,attributeFilter:['data-theme']});
+    addEventListener('resize',function(){size();if(!on||still)draw()});
+    addEventListener('mousemove',function(e){mouse.x=e.clientX;mouse.y=e.clientY});
+    addEventListener('mouseleave',function(){mouse.x=mouse.y=-999});
+    var bgSaved=null;try{bgSaved=localStorage.getItem('bg')}catch(e){}
+    if(bgSaved==='off'){stop();$('#bgBtn').setAttribute('aria-pressed','false');$('#bgBtn').setAttribute('aria-label','Turn background animation on')}else start();
+    $('#bgBtn').onclick=function(){
+      var b=$('#bgBtn'),nowOn=b.getAttribute('aria-pressed')!=='true';
+      b.setAttribute('aria-pressed',nowOn);b.setAttribute('aria-label',nowOn?'Turn background animation off':'Turn background animation on');
+      if(nowOn)start();else stop();
+      try{localStorage.setItem('bg',nowOn?'on':'off')}catch(e){}
+    };
+  })();
+
+  // Scroll progress bar
+  addEventListener('scroll',function(){
+    var m=document.documentElement.scrollHeight-innerHeight;
+    $('#prog').style.width=(m>0?scrollY/m*100:0)+'%';
+  });
+
+  $('#yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
